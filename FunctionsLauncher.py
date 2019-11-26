@@ -1,9 +1,7 @@
-import os
 import re
 import socket
 import argparse
 from NetworkClassFunctions import Host
-
 
 
 if __name__ == "__main__":
@@ -15,7 +13,7 @@ if __name__ == "__main__":
     #insert mapping functions
     if checkip:
         try:
-            ip=ip=socket.gethostbyname(ip_prov)
+            ip=socket.gethostbyname(ip_prov)
             myHost=Host(ip)
             myHost.latency()# or ping
         except:
